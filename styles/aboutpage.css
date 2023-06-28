@@ -1,0 +1,127 @@
+.titulo_soft {
+    background: var(--degrade-titulo);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 370%;
+}
+
+.titulos_paragrafos {
+    background: var(--degrade-titulo);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.desc_soft {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--cor-secundaria);
+    font-size: 20px;
+}
+
+
+.soft_lista {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-family: var(--fonte-url);
+    color: var(--cor-secundaria);
+    
+}
+
+.soft_lista2 {
+    display: flex;
+    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 22px;
+    font-family: var(--fonte-url);
+    color: var(--cor-secundaria);
+}
+
+.soft_ind {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--cor-secundaria);
+    border: 2px solid var(--cor-terciaria);
+    border-radius: 4px;
+    padding: 1.2%;
+    width: 9%;
+    gap: 10px;
+    transition: 0.5s;
+
+}
+
+.soft_ind:hover {
+    background-color: var(--cor-terciaria);
+}
+
+
+
+@media screen and (max-width:738px) {
+    .texto_apresentacao {
+        display: flex;
+        justify-content: center;
+        margin-left: 1.3em;
+        padding: 1em;
+    }
+
+    #foto {
+        display: none;
+    }
+
+  
+    
+    .desc_soft {
+        text-align: center;
+        margin-left: 1em;
+
+    }
+ 
+    .return_button{
+        margin-left: 2em;
+    }
+    .soft_ind{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: var(--cor-secundaria);
+        border: 2px solid var(--cor-terciaria);
+        border-radius: 4px;
+        padding: 1.2%;
+        width: 200px;
+        gap: 10px;
+        transition: 0.5s;
+    }
+    
+    .lista_item_link {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        
+    }
+
+    .swiper-wrapper {
+        gap: 1em;
+    }
+    
+    .swiper-slide{
+        display: flex;
+        justify-content: center;
+        margin-left: 3em;
+        gap: 1em;
+    }
+
+    footer{
+        margin-left: 1.5em;
+    }
+}

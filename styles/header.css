@@ -1,0 +1,124 @@
+.intro {
+    display: flex;
+    
+}
+    
+.material-symbols-outlined {
+    color: var(--cor-terciaria);
+}
+
+.navbar {
+    padding: 2% 0% 2% 2%;
+    display: flex;
+    gap: 5px;
+    color: var(--cor-secundaria);
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Krona  One', sans-serif; ;
+
+}
+
+.navbar_ind{
+    display: flex;
+    align-items: center;
+    background: linear-gradient(#abc4ff,#edf2fb );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-decoration: none;
+    font-family: var(--fonte-url);
+    width: 180px;
+
+}
+
+.return_button {
+    
+    transition: 0.5s;
+}
+
+.return_button:hover {
+    transform: scale(1.3);
+}
+
+/*atributos do mobile */
+.navbar__mobile {
+    display: none;
+}
+
+@media screen and (max-width: 730px) { /* mobile */
+    
+    .navbar_ind {
+        display: none;
+       }
+
+    .titulo_mobile {
+        font-family: 'Inter';
+        font-size: 20px;
+        text-align: center;
+
+        
+    }
+
+    #foto_mobile {
+        display: block;
+        width: 225px;
+        margin-left: 3em;
+        height: 290px;
+        border-radius: 20px;
+        box-shadow: var(--cor-terciaria) 0px 0px 9px 3px ;
+    }
+
+    .navbar__mobile {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        position: relative ;
+    }
+
+    .titulos_paragrafos {
+        display: flex;
+        justify-content: center;
+    }
+
+    .lista_item_link {
+        text-decoration: none;
+        
+    }
+
+    .item_lista {
+        list-style-type: none;
+        color: var(--cor-secundaria);
+        
+    }
+
+    .lista_item_link {
+        background: var(--degrade-titulo);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        
+        
+    }
+
+    .menu_hamburguer {
+        width: 40px;
+        height: 30px;
+        background-color: transparent;
+        border: none; 
+        cursor: pointer;
+    }
+
+    .lista_menu {
+        display: none;
+        text-align: center;
+        }
+
+        .open {
+        display: flex;
+        flex-direction: column;
+        
+        justify-content: center;
+        align-items: center;
+        margin-left: 4em;
+        }
+}

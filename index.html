@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+     <header class="intro" id="busca_nav">
+        <nav class="navbar">
+            <div class="navbar__mobile">
+                 <label for="menu">
+                    <button class="menu_hamburguer" onclick="ShowMenu()"><span class="material-symbols-outlined">menu</span></button>
+                </label>
+                 
+            <div class="lista_menu">
+                <ul>
+                    <li class="item_lista"><a href="about.html" class="lista_item_link">Sobre Mim</a></li><br>
+                    <li class="item_lista"><a href="mailto:gabriel.sant05@outlook.com" class="lista_item_link">Contato</a></li>
+                </ul>
+            </div>
+            
+        </div>
+            
+            <a href="index.html" class="navbar_ind"><span class="material-symbols-outlined" >home</span></a>
+            <a href="about.html" class="navbar_ind">Sobre Mim</a>
+            <a href="mailto:gabriel.sant05@outlook.com" class="navbar_ind">Contato</a>
+        
+         </nav>
+     </header><br>
+     <br>
+     <main class="content">
+       
+    <section>
+            <h1 id="cabecalho" class="titulos_paragrafos">Meu Portfólio</h1>
+            <img src="assets2/foto.jpg" alt="foto" id="foto_mobile">
+            <p class="texto_apresentacao">Olá!Eu sou o Gabriel Patricio, estudante de Desenvolvimento de Software na Fatec de Osasco, 
+            também estudante de Desenvolvimento Front-End, Data Science e Programação na Alura! 
+            Que tal conversarmos um pouco?Navegue pelo menu para saber mais sobre mim!</p><br>
+
+            <div class="links">
+                <h2 class="links_subtitulo">Acesse minhas redes e projetos:</h2>
+                <a href="https://cursos.alura.com.br/user/gabriel-sant05 " class="links_ind">
+                <img src="assets2/icons8-frontend-30.png" alt="">Alura</a><br>
+                
+                <a href="https://github.com/GabrielPatricioSantos" class="links_ind">
+                <img src="assets2/github.svg" alt="github">GitHub</a><br>
+
+                <a href="https://www.linkedin.com/in/gabriel-patricio-bastos-dos-santos-778b5a23a" class="links_ind"> 
+                    <img src="assets2/linkedin.svg" alt="linkedin">LinkedIn</a>
+            </div>
+
+            
+    </section>
+    
+    <img src="assets2/foto.jpg" alt="foto" id="foto"> 
+</main> 
+
+    <a href="#busca_nav" class="return_button soft_lista"><img src="assets2/icons8-scroll-up-40.png" alt="return button" ></a>
+    <footer>
+        <p>Gabriel Patricio &copy;</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
