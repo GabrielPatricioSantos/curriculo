@@ -1,0 +1,48 @@
+.swiper-button-next {
+    margin-right: 33em;
+}
+.swiper-button-prev {
+    margin-left: 33em;
+}
+
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-slide {
+    color: var(--cor-secundaria);
+    
+}
+
+.foto_carrosel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 35vw;
+}  
+    
+
+.texto_carrosel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media screen and (max-width:738px) {
+    .swiper, #busca_certificacao, #subtitulo_certificacao {
+        display: none;
+    }
+    body{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        height: 100vh;
+        width: 100vw;
+    }
+}

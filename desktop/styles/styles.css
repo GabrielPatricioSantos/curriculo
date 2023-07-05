@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+@import url(../styles/header.css);
+@import url(../styles/main.css);
+@import url(../styles/footer.css);
+@import url(../styles/aboutpage.css);
+@import url(../styles/carrosel.css);
+
+* {
+     scroll-behavior: smooth; 
+}
+
+:root  {
+    --cor-primaria: #000000; 
+    --cor-secundaria: #fff;
+    --cor-terciaria: #22d4fd;
+    --fonte-url:  'Cabin', sans-serif;
+    --degrade-fundo:linear-gradient(45deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
+    --degrade-titulo: linear-gradient(#9d0208,#d00000,#dc2f02, #e85d04 );
+    /* #001233, #002855 */
+}
+
+body {
+    background: var(--degrade-fundo);
+    font-family: var(--fonte-url);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    animation: FadeRight 2s;
+    
+}
+
+@keyframes FadeRight {
+    from {
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+

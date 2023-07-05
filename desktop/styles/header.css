@@ -1,0 +1,131 @@
+.intro {
+    display: flex;
+    
+}
+    
+ .home {
+    color: var(--cor-terciaria);
+    display: flex;
+    align-items: center;
+    color: var(--cor-secundaria);
+    text-decoration: none;
+    font-family: var(--fonte-url);
+    border: none;
+    font-weight: 100;
+    width: 18px;
+    
+}
+
+.navbar {
+    padding: 2% 0% 2% 2%;
+    display: flex;
+    gap: 3em;
+    color: var(--cor-secundaria);
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Krona  One', sans-serif; ;
+
+}
+
+.navbar_ind{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #5c97ef;
+    text-decoration: none;
+    font-family: var(--fonte-url);
+    padding: 7px;
+    margin-left: 1px;
+    border-radius: 0.3em;
+    font-weight: 100;
+    width: 130px;
+
+}
+
+
+
+/*atributos do mobile */
+.navbar__mobile {
+    display: none;
+}
+
+@media screen and (max-width: 730px) { /* mobile */
+
+    body{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        height: 100vh;
+        width: 100vw;
+    }
+    
+    .navbar_ind {
+        display: none;
+       }
+
+    .titulo_mobile {
+        font-family: 'Inter';
+        font-size: 20px;
+        text-align: center;
+
+        
+    }
+    
+    .home {
+        display: none;
+    }
+    .navbar__mobile {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        position: relative ;
+    }
+
+    .titulos_paragrafos {
+        display: flex;
+        justify-content: center;
+    }
+
+    .lista_item_link {
+        text-decoration: none;
+        
+    }
+
+    .item_lista {
+        list-style-type: none;
+        color: var(--cor-secundaria);
+        font-weight: 600;
+    }
+
+    .lista_item_link {
+        background: var(--degrade-titulo);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        
+        
+    }
+
+    .menu_hamburguer {
+        width: 40px;
+        height: 30px;
+        background-color: rgb(0, 0, 177);
+        border: 1px solid rgb(13, 13, 35);
+        border-radius: 5px;
+       
+    }
+
+    .lista_menu {
+        display: none;
+        text-align: center;
+        transition: 0.5s;
+        }
+
+        .open {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 4em;
+        }
+}
